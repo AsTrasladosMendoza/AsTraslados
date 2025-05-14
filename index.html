@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>As Mendoza Traslados</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+  <style>
+    body {
+      background-color: #c2cdff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+    .hero {
+      background: linear-gradient(to right, #2c3e50, #34495e);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+    .servicio-card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+    }
+    .testimonio {
+      font-style: italic;
+      border-left: 5px solid #f1c40f;
+      padding-left: 15px;
+      margin-bottom: 20px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 60px;
+      z-index: 100;
+      box-shadow: 7px 10px 18px rgba(31, 179, 43, 0.3);
+    }
+    .whatsapp-float:hover {
+      background-color: #fcfffd;
+    }
+    .tel, .ig {
+      background-color: #cac9c9;
+      color: #2c3e50;
+      text-align: center;
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .quienes {
+      font-weight: 500;
+      font-size: 15px;
+      max-width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 15px;
+      }
+      .tel, .ig {
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: static;
+      }
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        line-height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar con logo -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo-AS.webp" alt="Logo As Mendoza Traslados" width="40" height="40" class="me-2 rounded-circle">
+        <span class="fw-bold">As Mendoza Traslados</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navBar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <header class="hero">
+      <div class="container">
+        <h1 class="display-4">Traslados Confiables en Mendoza</h1>
+        <p class="lead">Te damos la bienvenida a AS Mendoza 🍷 Gestionamos tus #traslados, #tours, reservas en actividades y #bodegas para que tu única preocupación sea disfrutar y recargar energía☺️</p>
+      </div>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="row g-4">
+          <!-- Cards de servicio -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card servicio-card h-100 shadow">
+              <img src="aeropuerto.jpg" class="card-img-top" alt="Servicio Aeropuerto">
+              <div class="card-body">
+                <h5 class="card-title">Aeropuerto</h5>
+                <p class="card-text">Traslados rápidos y puntuales al aeropuerto internacional.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card servicio-card h-100 shadow">
+              <img src="foto-ejecutivo.jpg" class="card-img-top" alt="Servicio Ejecutivo">
+              <div class="card-body">
+                <h5 class="card-title">Ejecutivos</h5>
+                <p class="card-text">Ideal para viajes corporativos y ejecutivos exigentes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card servicio-card h-100 shadow">
+              <img src="foto-bodega.webp" class="card-img-top" alt="Servicio Turismo">
+              <div class="card-body">
+                <h5 class="card-title">Turismo</h5>
+                <p class="card-text">Recorre bodegas, montañas y paisajes únicos de Mendoza.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card servicio-card h-100 shadow">
+              <img src="foto-evento.webp" class="card-img-top" alt="Servicio Eventos">
+              <div class="card-body">
+                <h5 class="card-title">Eventos</h5>
+                <p class="card-text">Logística de movilidad para bodas, fiestas y congresos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">¿Quiénes Somos?</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="FOTO1.PNG" alt="Transporte As Mendoza" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-md-6">
+            <p class="fs-5">
+              As Mendoza Traslados nace con la misión de brindar un servicio de transporte profesional, cómodo y seguro. Con más de 10 años de experiencia en la región, nos especializamos en traslados privados, turismo enológico, eventos y soluciones corporativas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Testimonios</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card p-3 shadow h-100">
+              <blockquote class="blockquote text-center">
+                <p>"Excelente servicio! Ale un genio, responsable y muy atento."</p>
+                <footer class="blockquote-footer">Lucila Tuñon</footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3 shadow h-100">
+              <blockquote class="blockquote text-center">
+                <p>"Excelente servicio, súper recomendable. Mauricio fue muy atento."</p>
+                <footer class="blockquote-footer">Olguita Torres</footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3 shadow h-100">
+              <blockquote class="blockquote text-center">
+                <p>"Muy buen servicio, excelente trato, recorridos agradables."</p>
+                <footer class="blockquote-footer">Augusto Grosso</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form action="https://formspree.io/f/mldboava" method="POST" role="form">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+          </div>
+
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="p-3 bg-secondary text-white rounded mb-3">
+              <h5>Teléfono</h5>
+              <p>+54 9 261 307-4305</p>
+            </div>
+            <div class="p-3 bg-light rounded">
+              <h5>Instagram</h5>
+              <p><a href="https://www.instagram.com/asmendozatraslados" class="text-decoration-none">@asmendozatraslados</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 As Mendoza Traslados. Todos los derechos reservados.</p>
+    <a href="https://wa.me/5492613074305" target="_blank" class="text-success fs-4">
+      <i class="bi bi-whatsapp"></i> Contactanos por WhatsApp
+    </a>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/5492613074305" class="whatsapp-float" target="_blank" title="Enviar mensaje por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
